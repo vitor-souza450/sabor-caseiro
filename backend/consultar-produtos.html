@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de consulta do Sabor Caseiro">
+    <meta name="author" content="Vitor Souza">
+    <title>Consulte os Produtos - Sabor Caseiro</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="css/principal.css"> -->
+    <!-- <link rel="stylesheet" href="css/consultar-produtos.css"> -->
+    <link rel="stylesheet" href="css/principal.min.css">
+    <link rel="stylesheet" href="css/consultar-produtos.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="javascript/principal.js"></script> -->
+    <!-- <script src="javascript/consultar-produtos.js" defer></script> -->
+    <script type="module" src="javascript/principal.min.js"></script>
+    <script src="javascript/consultar-produtos.min.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logotipo.svg" alt="Logotipo do Sabor Caseiro">
+        <h1>Sabor Caseiro</h1>
+    </header>
+
+    <nav>
+        <button type="button" id="botao-menu" class="botao-menu">
+            <i class="bi bi-list"></i>
+        </button>
+        <div id="area-navegacao" class="area-navegacao">
+            <ul>
+                <li>
+                    <a href="index.html">Cadastrar Produto</a>
+                </li>
+                <li>
+                    <a href="editar-produto.html">Editar Produto</a>
+                </li>
+                <li>
+                    <a href="deletar-produto.html">Deletar Produto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Consulte os Produtos</h2>
+        <div class="area-campo">
+            <label for="pesquisa">ID (#), Nome, Tipo ou Preço</label>
+            <input type="search" name="pesquisa" id="pesquisa" class="campo"
+                placeholder="ID (#), nome, tipo ou preço do produto...">
+        </div>
+        <div id="area-tabela" class="area-tabela">
+            <table>
+                <tr class="linha-cabecalho-tabela">
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Preço</th>
+                </tr>
+                <tr class="linha-corpo-tabela">
+                    <td>1</td>
+                    <td>Coxinha de Frango</td>
+                    <td>Aperitivo</td>
+                    <td>R$ 5,00</td>
+                </tr>
+                <tr class="linha-corpo-tabela">
+                    <td>2</td>
+                    <td>Macarrão com Nuggets</td>
+                    <td>Prato Principal</td>
+                    <td>R$ 15,00</td>
+                </tr>
+                <tr class="linha-corpo-tabela">
+                    <td>3</td>
+                    <td>Sorvete de Creme</td>
+                    <td>Sobremesa</td>
+                    <td>R$ 6,50</td>
+                </tr>
+            </table>
+        </div>
+        <p id="mensagem-sem-pesquisa" class="mensagem-sem-pesquisa">Não foi possível encontrar sua pesquisa.</p>
+    </main>
+
+    <footer>
+        <p class="copyright">
+            &copy; Copyright <span id="copyright">2024</span> by Vitor Souza
+        </p>
+    </footer>
+</body>
+
+</html>
